@@ -10,6 +10,11 @@ router.get("/rutaGet", (req, res) =>{
     res.send("Hola mundo, mensaje de prueba numero 1")
 })
 
+router.get("/formularioEnviado", (req, res) =>{
+    console.log("Datos recibidos");
+    res.send("Datos llevados al backend");
+})
+
 router.get("/rutaGet2", (req, res) =>{
     console.log("Llega el mensaje a la consola");
     res.send("Hoa mundo, aquí probando las rutas get");
@@ -17,13 +22,13 @@ router.get("/rutaGet2", (req, res) =>{
 
 router.post("/rutaPost", (req,res) =>{
     console.log("Enviada peticion POST");
-    res.send("Datos recibidos de un post");
+    res.send("Datos recibidos de un post<br>");
     console.log(req.body);
-    res.json({
-        id: "001",
-        nombre: req.body.nombre,
-        apellido: res.body.apellido,
-    });
+    // res.json({
+    //     id: "001",
+    //     nombre: req.body.nombre,
+    //     apellido: req.body.apellido,
+    // });
 })
 
 module.exports = router;

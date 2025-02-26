@@ -7,18 +7,19 @@
 </head>
 <body>
     <p>Formulario de pruebas</p>
-    <form action="http://localhost:8080/rutaGet" method="GET">
+    <form action="http://localhost:8080/formularioEnviado" method="GET">
         Nombre: <input type="text" name="Nombre" /><br>
         Apellido: <input type="text" name="Apellido" /><br>
         <button id="getButtonLocal">Enviar al backend</button>
-    </form>
+   </form>
     <p>Formulario de pruebas POST</p>
     <form action="http://localhost:8080/rutaPost" method="POST">
-        Nombre: <input type="text" name="Nombre" /><br>
-        Apellido: <input type="text" name="Apellido" /><br>
+        Nombre: <input type="text" name="nombre" /><br>
+        Apellido: <input type="text" name="apellido" /><br>
         <button id="postButtonLocal">Enviar al backend</button>
     </form>
 
    
 </body>
+<script src="script.js"></script>
 </html>
