@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Roshar</title>
 </head>
 <body>
-    Estas en Roshar
+    <p>
+        Rellena el siguiente formulario
+        <form action="/src/front/roshar2.html" method="GET">
+            Nombre: <input type="text" name="nombre" /><br>
+            Apellido: <input type="text" name="apellido" /><br>
+            Orden de caballeros radiantes: <input name="orden" list="caballeros">
+            <datalist id="caballeros">
+                <option value="Corredores del Viento"></option>
+                <option value="Rompedores del Cielo"></option>
+                <option value="Portadores del Polvo"></option>
+                <option value="Danzantes del Filo"></option>
+                <option value="Vigilantes de la verdad"></option>
+                <option value="Tejedores de Luz"></option>
+                <option value="Nominadores de lo otro"></option>
+                <option value="Escultores de Voluntad"></option>
+                <option value="Custorios de la piedra"></option>
+                <option value="Forjadores de Vinculos"></option>
+                
+            </datalist><br>
+            ¿Has leido el Archivo de las Tormentas? <input type="radio" name="radio" value="Si">Si
+            <input type="radio" name="radio" value="No">No<br>
+            Introduzca una contraseña: <input type="password" name="contraseña"/><br>
+            <button id="postButtonLocal">Enviar</button>
+            <button id="borrado" type="reset">Reestablecer</button>
+        </form>
+    </p>
 </body>
 <script src="script.js"></script>
 </html>
