@@ -22,13 +22,13 @@ router.get("/rutaGet2", (req, res) =>{
 
 router.post("/rutaPost", (req,res) =>{
     console.log("Enviada peticion POST");
-    res.send("Datos recibidos de un post<br>");
+    // res.send("Datos recibidos de un post<br>");
     console.log(req.body);
-    // res.json({
-    //     id: "001",
-    //     nombre: req.body.nombre,
-    //     apellido: req.body.apellido,
-    // });
+    res.json({
+        id: "001",
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
+    });
 })
 
 module.exports = router;
