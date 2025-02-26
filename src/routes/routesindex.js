@@ -18,6 +18,12 @@ router.get("/rutaGet2", (req, res) =>{
 router.post("/rutaPost", (req,res) =>{
     console.log("Enviada peticion POST");
     res.send("Datos recibidos de un post");
+    console.log(req.body);
+    res.json({
+        id: "001",
+        nombre: req.body.nombre,
+        apellido: res.body.apellido,
+    });
 })
 
 module.exports = router;
