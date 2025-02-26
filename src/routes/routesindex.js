@@ -25,9 +25,12 @@ router.post("/rutaPost", (req,res) =>{
     // res.send("Datos recibidos de un post<br>");
     console.log(req.body);
     res.json({
-        id: "001",
         nombre: req.body.nombre,
         apellido: req.body.apellido,
+        investidura: req.body.investidura,
+        libroLeido : req.body.comprobacion,
+        contraseña : "****",
+
     });
 })
 

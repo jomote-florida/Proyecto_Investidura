@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    Estás en Scadrial
+    <p>
+        Rellena el siguiente formulario
+        <form action="http://localhost:8080/rutaPost" method="POST">
+            Nombre: <input type="text" name="nombre" /><br>
+            Apellido: <input type="text" name="apellido" /><br>
+            Tipo Investidura: <input name="investidura" list="investiduras">
+            <datalist id="investiduras">
+                <option value="Hemalurgia"></option>
+                <option value="Alomancia"></option>
+                <option value="Feruquimia"></option>
+            </datalist><br>
+            ¿Has leido Nacidos de la Bruma? <input type="checkbox" name="comprobacion"/><br>
+            Introduzca una contraseña: <input type="password" name="contraseña"/><br>
+            <button id="postButtonLocal">Enviar</button>
+            <button id="borrado" type="reset">Reestablecer</button>
+        </form>
+    </p>
 </body>
+<script src="script.js"></script>
 </html>
