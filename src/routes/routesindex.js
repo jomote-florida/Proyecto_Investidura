@@ -15,4 +15,9 @@ router.get("/rutaGet2", (req, res) =>{
     res.send("Hoa mundo, aquí probando las rutas get");
 })
 
+router.post("/rutaPost", (req,res) =>{
+    console.log("Enviada peticion POST");
+    res.send("Datos recibidos de un post");
+})
+
 module.exports = router;
