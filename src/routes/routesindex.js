@@ -28,7 +28,7 @@ router.post("/rutaPost", (req,res) =>{
         nombre: req.body.nombre,
         apellido: req.body.apellido,
         investidura: req.body.investidura,
-        libroLeido : req.body.comprobacion,
+        libroLeido : req.body.radio,
         contraseña : "****",
 
     });
