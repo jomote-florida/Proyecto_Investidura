@@ -1,24 +1,7 @@
 const { Router } = require("express");
 const router = Router();
 
-router.get("/", (req,res) =>{
-    res.send("Estamos probando el nuevo servidor");
-    console.log("Hemos entrado");
-})
 
-router.get("/rutaGet", (req, res) =>{
-    res.send("Hola mundo, mensaje de prueba numero 1")
-})
-
-router.get("/formularioEnviado", (req, res) =>{
-    console.log("Datos recibidos");
-    res.send("Datos llevados al backend");
-})
-
-router.get("/rutaGet2", (req, res) =>{
-    console.log("Llega el mensaje a la consola");
-    res.send("Hoa mundo, aquí probando las rutas get");
-})
 
 router.post("/rutaPost", (req,res) =>{
     console.log("Enviada peticion POST");
@@ -32,6 +15,12 @@ router.post("/rutaPost", (req,res) =>{
         contraseña : "****",
 
     });
+})
+
+router.post("/informacionFormulario", (req, res) => {
+    console.log("Enviada petición Post");
+    console.log(req.body);
+    res.redirect("http://127.0.0.1:5500/src/front/roshar2.html");
 })
 
 module.exports = router;
