@@ -19,7 +19,7 @@ router.post("/rutaPost", (req,res) =>{//Esta ruta nos mostrará en consola los d
 router.post("/informacionFormulario", (req, res) => {
     console.log("Enviada petición Post");//Esta en cambio lo que manda es al usuario a otra pagina web, pero si muestra en consola los datos introducidos
     console.log(req.body);
-    res.redirect("http://127.0.0.1:5500/src/front/roshar2.html");
+    res.redirect("https://jomote-florida.github.io/Proyecto_Investidura_Frontend/roshar2.html");
 })
 
 module.exports = router;
