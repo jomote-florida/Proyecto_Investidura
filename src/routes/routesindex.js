@@ -49,6 +49,7 @@ router.post("/informacionFormulario", (req, res) => {
 
 router.post("/rutaPost3", (req,res)=>{
     console.log("Seguimos avanzando en proyecto");
+    req.body="Hola";
     console.log(req.body);
     res.send("Has entrado en el post");
 })
