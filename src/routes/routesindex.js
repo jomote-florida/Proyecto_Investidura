@@ -1,7 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 
-
+router.get("/rutaGetPruebaUnity", (req,res) =>{
+    console.log("Entrada a ruta Get");
+    res.send("Hola desde el get de prueba para Unity");
+})
 
 router.post("/rutaPost", (req,res) =>{//Esta ruta nos mostrará en consola los datos recibidos por el formulario
     console.log("Enviada peticion POST");
