@@ -6,6 +6,26 @@ router.get("/rutaGetPruebaUnity", (req,res) =>{
     res.send("Hola desde el get de prueba para Unity");
 })
 
+router.get("/otraRutaGet", (req,res)=>{
+    console.log("Otra entrada a get exitosa");
+    res.send("Le vas cogiendo el tranquilo a las conexiones estas");
+})
+
+router.get("/terceraRuta", (req,res)=>{
+    console.log("Exitoooo");
+    res.send("Puedes observar que la cosa sigue");
+})
+
+router.get("/laOlvidada", (req,res)=>{
+    console.log("De aquí a montar aplicaciones");
+    res.send("Ya solo faltaría aprender a...");
+})
+
+router.get("/ultimate", (req,res) =>{
+    console.log("Pronto en los mejores cines");
+    res.send("... que el texto apareciera en pantalla en vez en consola");
+})
+
 router.post("/rutaPost", (req,res) =>{//Esta ruta nos mostrará en consola los datos recibidos por el formulario
     console.log("Enviada peticion POST");
     console.log(req.body);
