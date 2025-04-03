@@ -49,19 +49,19 @@ router.post("/informacionFormulario", (req, res) => {
 
 router.post("/rutaPost3", (req,res)=>{
     console.log("Seguimos avanzando en proyecto");
-    // console.log(req.body);
+    console.log(req.body);
     res.send("Has entrado en el post");
 })
 
 router.post(("/yOtroMas", (req,res)=>{
     console.log("Si tu quisieras");
-    // console.log(req.body);
+    console.log(req.body);
     res.send("Estarias en pijama");
 }))
 
 router.post("/yaLaUltima",(req,res)=>{
     console.log("SACABO");
-    // console.log(req.body);
+    console.log(req.body);
     res.send("La verdad es que no recuerdo porque ponía req.body");
 })
 
