@@ -47,20 +47,20 @@ router.post("/informacionFormulario", (req, res) => {
     res.redirect("https://jomote-florida.github.io/Proyecto_Investidura_Frontend/roshar2.html");
 })
 
-router.post("/rutaPost3", (req,res)=>{
+router.post("/rutaPost3", (req, res) => {
     console.log("Seguimos avanzando en proyecto");
     req.body="Hola";
     console.log(req.body);
     res.send("Has entrado en el post");
 })
 
-router.post("/yOtroMas", (req,res)=>{
+router.post("/yOtroMas", (req, res) => {
     console.log("Si tu quisieras");
     console.log(req.body);
     res.send("Estarias en pijama");
 })
 
-router.post("/yaLaUltima",(req,res)=>{
+router.post("/yaLaUltima", (req, res) => {
     console.log("SACABO");
     console.log(req.body);
     res.send("La verdad es que no recuerdo porque ponía req.body");
