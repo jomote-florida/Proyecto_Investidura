@@ -54,11 +54,11 @@ router.post("/rutaPost3", (req,res)=>{
     res.send("Has entrado en el post");
 })
 
-router.post(("/yOtroMas", (req,res)=>{
+router.post("/yOtroMas", (req,res)=>{
     console.log("Si tu quisieras");
     console.log(req.body);
     res.send("Estarias en pijama");
-}))
+})
 
 router.post("/yaLaUltima",(req,res)=>{
     console.log("SACABO");
